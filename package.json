@@ -96,7 +96,7 @@
     "style-loader": "^0.19.1",
     "svg-inline-loader": "^0.8.0",
     "svg-inline-react": "^3.0.0",
-    "svgo": "^0.7.2",
+    "svgo": "^1.0.5",
     "twitter": "^1.7.0",
     "underscore-template-loader": "^0.8.0",
     "webpack": "^3.10.0",
