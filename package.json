@@ -63,7 +63,7 @@
     "marked": "^0.3.6",
     "matter-js": "^0.13.0",
     "mkdirp": "^0.5.1",
-    "mocha": "^3.0.2",
+    "mocha": "^5.0.5",
     "moment": "^2.18.1",
     "navigation": "^4.0.1",
     "navigation-react": "^2.0.5",
