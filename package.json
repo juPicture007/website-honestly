@@ -69,7 +69,7 @@
     "navigation-react": "^2.0.5",
     "nock": "^9.1.4",
     "node-fetch": "^1.6.3",
-    "node-hook": "^0.4.0",
+    "node-hook": "^1.0.0",
     "normalize.css": "^8.0.0",
     "param-case": "^2.1.0",
     "pathseg": "^1.1.0",

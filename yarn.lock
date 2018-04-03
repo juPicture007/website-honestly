@@ -5670,9 +5670,9 @@ node-forge@0.6.33:
   version "0.6.33"
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.6.33.tgz#463811879f573d45155ad6a9f43dc296e8e85ebc"
 
-node-hook@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/node-hook/-/node-hook-0.4.0.tgz#782a3b3b4873388f93d087cd2971162f24eb6f2d"
+node-hook@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/node-hook/-/node-hook-1.0.0.tgz#82ca39af991d726d5c7952e59c992378bb296f7e"
 
 node-libs-browser@^2.0.0:
   version "2.0.0"
