@@ -1,6 +1,7 @@
 // Displays event related image with link
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 
 export default function EventImage({ imgPath, imgAlt }) {
@@ -14,6 +15,6 @@ export default function EventImage({ imgPath, imgAlt }) {
 }
 
 EventImage.propTypes = {
-  imgPath: React.PropTypes.string.isRequired,
-  imgAlt: React.PropTypes.string.isRequired,
+  imgPath: PropTypes.string.isRequired,
+  imgAlt: PropTypes.string.isRequired,
 };

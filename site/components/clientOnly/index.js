@@ -1,4 +1,5 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 /** Only render the children of this component if JavaScript is enabled and we are in the browser */
 class ClientOnly extends Component {

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../../css/typography/_fonts.css';
 
 export default function Paragraph({ children }) {
@@ -6,5 +7,5 @@ export default function Paragraph({ children }) {
 }
 
 Paragraph.propTypes = {
-  children: React.PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 };

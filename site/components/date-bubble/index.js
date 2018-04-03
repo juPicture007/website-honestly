@@ -1,6 +1,7 @@
 // Displays date bubble
 
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 
 function displayDateContent(startDateTime, endDateTime) {

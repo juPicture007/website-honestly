@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 import * as textStyles from '../utils/text.css';
 import styles from './styles.css';
 
@@ -9,6 +10,6 @@ export default function Paragraph({ align, children }) {
 }
 
 Paragraph.propTypes = {
-  align: React.PropTypes.oneOf(['center', 'left', 'right']),
-  children: React.PropTypes.node,
+  align: PropTypes.oneOf(['center', 'left', 'right']),
+  children: PropTypes.node,
 };

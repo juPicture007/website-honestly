@@ -22,15 +22,16 @@
 
 /* eslint react/no-multi-comp: 0 */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './style.css';
 
 export class Grid extends Component {
   static propTypes = {
-    breakOn: React.PropTypes.string,
-    children: React.PropTypes.node,
-    extraClassName: React.PropTypes.string,
-    fit: React.PropTypes.bool,
+    breakOn: PropTypes.string,
+    children: PropTypes.node,
+    extraClassName: PropTypes.string,
+    fit: PropTypes.bool,
   };
 
   defaultProps = {

@@ -1,5 +1,6 @@
 import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 import Image2010 from '../2010/2010.png';
 import Image2011 from '../2011/2011.png';
@@ -40,8 +41,8 @@ const MobileImage = ({ index, onChangeIndex }) => {
 };
 
 MobileImage.propTypes = {
-  index: React.PropTypes.number.isRequired,
-  onChangeIndex: React.PropTypes.func.isRequired,
+  index: PropTypes.number.isRequired,
+  onChangeIndex: PropTypes.func.isRequired,
 };
 
 export default MobileImage;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from '../../components/link';
 import styles from './style.css';
 import confusedBadger from './png/confused-badger.png';
@@ -32,8 +33,8 @@ export default function ErrorPage({ title, content, linkText, linkHref }) {
 }
 
 ErrorPage.propTypes = {
-  title: React.PropTypes.string.isRequired,
-  content: React.PropTypes.node.isRequired,
-  linkText: React.PropTypes.string,
-  linkHref: React.PropTypes.string,
+  title: PropTypes.string.isRequired,
+  content: PropTypes.node.isRequired,
+  linkText: PropTypes.string,
+  linkHref: PropTypes.string,
 };

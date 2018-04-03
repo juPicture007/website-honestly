@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 
 export default function Section({ children }) {
@@ -6,5 +7,5 @@ export default function Section({ children }) {
 }
 
 Section.propTypes = {
-  children: React.PropTypes.node,
+  children: PropTypes.node,
 };

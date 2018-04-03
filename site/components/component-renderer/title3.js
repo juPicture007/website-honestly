@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './styles.css';
 
 export default function Title3({ children }) {
@@ -6,5 +7,5 @@ export default function Title3({ children }) {
 }
 
 Title3.propTypes = {
-  children: React.PropTypes.node,
+  children: PropTypes.node,
 };

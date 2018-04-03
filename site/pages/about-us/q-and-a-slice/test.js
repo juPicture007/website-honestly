@@ -1,11 +1,14 @@
 import React from 'react';
-import { render } from 'enzyme';
+import Enzyme, { render } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import QAndASlice from '.';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe('site/about-us/q-and-a-slice', () => {
   it('should render nothing for empty array', () => {
     const qAndASlice = render(<QAndASlice qAndAs={[]} />);
-    expect(qAndASlice.html()).to.equal('');
+    expect(qAndASlice.html()).to.equal(null);
   });
 
   it('should render heading 2', () => {

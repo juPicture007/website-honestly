@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import styles from './style.css';
 
@@ -6,15 +7,15 @@ export default class Cell extends Component {
   static propTypes = {
     // Fine tuning exact screen size breakpoint when
     // horizontal cells are broken into vertical row
-    breakOn: React.PropTypes.string,
+    breakOn: PropTypes.string,
 
-    children: React.PropTypes.node,
+    children: PropTypes.node,
 
     // Using breakpoint definitions from breakpoints.css
     // to allow this cell content to be hidden when needed
-    hideOn: React.PropTypes.oneOf(['mobileS', 'mobileSM', 'mobile', 'tablet', 'dont']),
+    hideOn: PropTypes.oneOf(['mobileS', 'mobileSM', 'mobile', 'tablet', 'dont']),
 
-    size: React.PropTypes.number,
+    size: PropTypes.number,
   };
 
   static defaultProps = {

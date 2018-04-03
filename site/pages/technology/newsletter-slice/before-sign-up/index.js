@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
+import PropTypes from 'prop-types';
 import styles from '../style.css';
 import ClientOnly from '../../../../components/clientOnly';
 
@@ -100,7 +101,7 @@ class BeforeSignUp extends Component {
   }
 }
 
-const { func, string } = React.PropTypes;
+const { func, string } = PropTypes;
 BeforeSignUp.propTypes = {
   onSubmit: func.isRequired,
   errorMessage: string.isRequired,

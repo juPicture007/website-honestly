@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 import Item from './item';
 import Arrow from './arrow';
@@ -24,8 +25,8 @@ const TimelineNav = ({ currentIndex, onClick }) => {
 };
 
 TimelineNav.propTypes = {
-  currentIndex: React.PropTypes.number.isRequired,
-  onClick: React.PropTypes.func.isRequired,
+  currentIndex: PropTypes.number.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default TimelineNav;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 
 const Content = ({ year, title, text, fact, image, flip }) => {
@@ -39,13 +40,13 @@ const Content = ({ year, title, text, fact, image, flip }) => {
 };
 
 Content.propTypes = {
-  year: React.PropTypes.string.isRequired,
-  title: React.PropTypes.string.isRequired,
-  text: React.PropTypes.string.isRequired,
-  fact: React.PropTypes.string.isRequired,
-  image: React.PropTypes.string.isRequired,
-  mobileImage: React.PropTypes.string.isRequired,
-  flip: React.PropTypes.bool,
+  year: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  fact: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  mobileImage: PropTypes.string.isRequired,
+  flip: PropTypes.bool,
 };
 
 export default Content;

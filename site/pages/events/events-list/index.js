@@ -2,7 +2,8 @@
 // You can request only displaying events of past or future
 // with the `timeline` prop
 
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 import EventsTimelineTitle from '../events-timeline-title';
 import EventsListEntry from '../events-list-entry';
@@ -33,7 +34,7 @@ const EventsList = ({ events, timeline }) => {
 };
 
 EventsList.propTypes = {
-  events: PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  events: PropTypes.arrayOf(PropTypes.object).isRequired,
   timeline: EventsTimelineTitle.propTypes.timeline,
 };
 

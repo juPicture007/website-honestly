@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-pascal-case, react/no-danger */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Container from '../../components/container';
 import Section from '../../components/section';
@@ -67,24 +68,24 @@ export default function Event({ event }) {
 }
 
 const dateShape = {
-  date: React.PropTypes.string.isRequired,
-  monthSym: React.PropTypes.string.isRequired,
-  year: React.PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  monthSym: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
 };
 
 Event.propTypes = {
-  event: React.PropTypes.shape({
-    startDateTime: React.PropTypes.shape(dateShape).isRequired,
-    endDateTime: React.PropTypes.shape(dateShape),
-    title: React.PropTypes.string,
-    strapline: React.PropTypes.string,
-    body: React.PropTypes.arrayOf(
-      React.PropTypes.shape({
-        text: React.PropTypes.string,
+  event: PropTypes.shape({
+    startDateTime: PropTypes.shape(dateShape).isRequired,
+    endDateTime: PropTypes.shape(dateShape),
+    title: PropTypes.string,
+    strapline: PropTypes.string,
+    body: PropTypes.arrayOf(
+      PropTypes.shape({
+        text: PropTypes.string,
       }),
     ),
     internalLinks: EventLinksList.propTypes.linkList,
     externalLinks: EventLinksList.propTypes.linkList,
-    featureImageFilename: React.PropTypes.string,
+    featureImageFilename: PropTypes.string,
   }),
 };

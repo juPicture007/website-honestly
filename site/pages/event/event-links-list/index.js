@@ -1,8 +1,9 @@
 // Displays list of links related to the event
 
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 import layout from '../../../components/utils/layout.css';
 import styles from './style.css';
 
@@ -37,7 +38,7 @@ EventLinksList.propTypes = {
       title: PropTypes.string,
     }),
   ),
-  listType: React.PropTypes.oneOf(['external', 'internal']).isRequired,
+  listType: PropTypes.oneOf(['external', 'internal']).isRequired,
 };
 
 export default EventLinksList;

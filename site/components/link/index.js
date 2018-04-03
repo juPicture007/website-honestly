@@ -1,7 +1,8 @@
 // @flow
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { StateNavigator } from 'navigation';
 import { NavigationLink } from 'navigation-react';
+import PropTypes from 'prop-types';
 
 export type LinkProps = {
   to: string,

@@ -1,5 +1,6 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import classnames from 'classnames/bind';
+import PropTypes from 'prop-types';
 import { mediumScreen, largeScreen } from '../../css/_sizes.css';
 
 import styles from './style.css';

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 
 export default class HR extends Component {
   static propTypes = {
-    color: React.PropTypes.oneOf(['red', 'grey']),
-    customClassName: React.PropTypes.string,
+    color: PropTypes.oneOf(['red', 'grey']),
+    customClassName: PropTypes.string,
   };
 
   defaultProps = {

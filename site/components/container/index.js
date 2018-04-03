@@ -4,11 +4,12 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 
 export default class Container extends Component {
   static propTypes = {
-    children: React.PropTypes.node,
+    children: PropTypes.node,
   };
 
   static defaultProps = {

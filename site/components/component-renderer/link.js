@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './styles.css';
 
 export default function Link({ children, href }) {
@@ -10,6 +11,6 @@ export default function Link({ children, href }) {
 }
 
 Link.propTypes = {
-  children: React.PropTypes.node,
-  href: React.PropTypes.string.isRequired,
+  children: PropTypes.node,
+  href: PropTypes.string.isRequired,
 };

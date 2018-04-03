@@ -6,6 +6,7 @@
 import isArray from 'lodash.isarray';
 import isString from 'lodash.isstring';
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import Paragraph from './paragraph';
 import Link from './link';
@@ -27,8 +28,8 @@ const componentIndex = {
 
 export default class ComponentRenderer extends Component {
   static propTypes = {
-    data: React.PropTypes.shape({
-      type: React.PropTypes.string,
+    data: PropTypes.shape({
+      type: PropTypes.string,
     }).isRequired,
   };
 

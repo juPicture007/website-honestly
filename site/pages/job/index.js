@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
+import PropTypes from 'prop-types';
 import RawHtml from '../../components/raw-html';
 import { Grid, Cell } from '../../components/grid';
 import Container from '../../components/container';
@@ -52,9 +53,9 @@ export default function Job({ job }) {
 }
 
 Job.propTypes = {
-  job: React.PropTypes.shape({
-    title: React.PropTypes.string,
-    fullDescription: React.PropTypes.string,
-    applicationUrl: React.PropTypes.string,
+  job: PropTypes.shape({
+    title: PropTypes.string,
+    fullDescription: PropTypes.string,
+    applicationUrl: PropTypes.string,
   }),
 };

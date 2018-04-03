@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames/bind';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 
 const cx = classnames.bind(styles);
@@ -31,9 +32,9 @@ const Arrow = ({ direction, onClick, currentIndex }) => {
 };
 
 Arrow.propTypes = {
-  direction: React.PropTypes.string.isRequired,
-  onClick: React.PropTypes.func.isRequired,
-  currentIndex: React.PropTypes.number.isRequired,
+  direction: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  currentIndex: PropTypes.number.isRequired,
 };
 
 export default Arrow;

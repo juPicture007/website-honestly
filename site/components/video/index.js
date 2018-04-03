@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 
 export default class Video extends Component {
   static propTypes = {
-    id: React.PropTypes.string.isRequired,
-    type: React.PropTypes.oneOf(['vimeo', 'youtube']).isRequired,
-    title: React.PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    type: PropTypes.oneOf(['vimeo', 'youtube']).isRequired,
+    title: PropTypes.string.isRequired,
   };
 
   static urlMap = {

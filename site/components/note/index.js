@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 
 export default function Note({ children }) {
@@ -6,5 +7,5 @@ export default function Note({ children }) {
 }
 
 Note.propTypes = {
-  children: React.PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 };

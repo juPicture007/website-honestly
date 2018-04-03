@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Grid, Cell } from '../grid';
 
-const { node, number } = React.PropTypes;
+const { node, number } = PropTypes;
 
 export default function Wall({ children, cols }) {
   const elements = [];

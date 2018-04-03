@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './style.css';
 
 const Principle = ({ number, title, description }) => (
@@ -14,9 +15,9 @@ const Principle = ({ number, title, description }) => (
 );
 
 Principle.propTypes = {
-  number: React.PropTypes.string,
-  title: React.PropTypes.string,
-  description: React.PropTypes.string,
+  number: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
 };
 
 export default Principle;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Note from '../../../components/note';
 import RawHtml from '../../../components/raw-html';
@@ -26,10 +27,10 @@ export default function Jobs({ jobs }) {
 }
 
 Jobs.propTypes = {
-  jobs: React.PropTypes.arrayOf(
-    React.PropTypes.shape({
-      description: React.PropTypes.string,
-      title: React.PropTypes.string,
+  jobs: PropTypes.arrayOf(
+    PropTypes.shape({
+      description: PropTypes.string,
+      title: PropTypes.string,
     }),
   ),
 };
