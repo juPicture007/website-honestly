@@ -1,12 +1,13 @@
 /* eslint-disable no-console */
 import fs from 'fs';
-import promisify from 'es6-promisify';
 
 import getSiteState from '../../state';
 import { routeDefinitions } from '../../site/routes/definitions';
 import getSiteRoutes from './site-routes';
 import formatRoutes from './format-routes';
 import getBlogXML from './blog-xml';
+
+const { promisify } = require('es6-promisify');
 
 const writeFile = promisify(fs.writeFile);
 
